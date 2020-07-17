@@ -1,0 +1,2 @@
+class LineFood < ApplicationRecord
+end
