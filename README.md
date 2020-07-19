@@ -1,24 +1,24 @@
-# README
+## ubser-eats-likeについて
+### 初期データの作成
+基本的にseedsを回して初期データを投入します。
+($ uber-eats-like > はターミナルで uber-eats-likeディレクトリで > 以下のコマンドを実行することを指します。)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```
+$ uber-eats-like > bundle exec rails r db/seeds.rb
+```
 
-Things you may want to cover:
+### 動かし方
 
-* Ruby version
+#### APIサーバーの起動
+```
+$ uber-eats-like > bundle exec rails s
+```
 
-* System dependencies
+別タブで
+#### frontendの起動
+```
+$ uber-eats-like/frontend > npm start
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#### Chromeなどで以下にアクセス
+http://localhost:3001/restaurants
